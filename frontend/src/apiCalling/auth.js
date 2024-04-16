@@ -2,7 +2,7 @@ import axios from "axios"
 import { useCookies } from "react-cookie";
 import { toast } from "react-hot-toast"
 
-const URL = process.env.REACT_APP_BACKEND_URL;
+const URL = "https://spotify-clone-main.onrender.com";
 
 export const unAuthenticatedPostRequest = async (route, body, navigate, text) => {
   const toastId = toast.loading("Loading...")

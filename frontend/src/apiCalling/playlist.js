@@ -1,7 +1,7 @@
 import axios from "axios"
 import { toast } from "react-hot-toast"
 
-const URL = process.env.REACT_APP_BACKEND_URL + "/playlist";
+const URL = "https://spotify-clone-main.onrender.com" + "/playlist";
 
 export const createPlaylist = async (body, token) => {
   const toastId = toast.loading("Loading...")
